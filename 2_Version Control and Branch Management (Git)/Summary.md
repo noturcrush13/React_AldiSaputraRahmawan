@@ -4,3 +4,4 @@
 4. Didalam github terdapat banyak fitur yang digunakan untuk mengatur versi dari source code program tersebut salah satunya adalah git init, git commit, git push, git add, dll
 5. Masing masing fitur terdapat fungsinya masing masing didalam github
 
+link github hasil praktikum : https://github.com/noturcrush13/FirstRepo.git
