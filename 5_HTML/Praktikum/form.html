@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Form Sign Up</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Buat Account Baru!</h1>
+
+        <h2>Sign Up Form</h2>
+
+        <form action="welcome.html">
+            <fieldset>
+                <legend><strong>Personal Information</strong></legend>
+                <p>
+                    <label for="first-name">First Name :</label><br>
+                    <input type="text" id="first-name" name="first-name" placeholder="First Name" required><br>
+                </p>
+                <p>
+                    <label for="last-name">Last Name :</label><br>
+                    <input type="text" id="last-name" name="last-name" placeholder="Last Name" required><br>
+                </p>
+                <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Gender :</legend><br>
+
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other">Other</label><br>
+                    <br>
+            </fieldset>
+            <fieldset>
+                <legend>Nationality :</legend><br>
+                <select name="nationality" id="nationality">
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Malaysia">Malaysia</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Japan">Japan</option>
+                    <option value="China">China</option>
+                </select><br>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Language Spoken :</legend><br>
+
+                <input type="checkbox" id="language1" name="language1" value="Bahasa Indonesia">
+                <label for="language1">Bahasa Indonesia</label><br>
+                <input type="checkbox" id="language2" nama="language2" value="English">
+                <label for="language2">English</label><br>
+                <input type="checkbox" id="language3" name="language3" value="Malaysian">
+                <label for="language3">Malaysian</label><br>
+                <input type="checkbox" id="language4" nama="language4" value="Other">
+                <label for="language4">Other</label><br>
+                <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Bio :</legend><br>
+
+                <textarea name="bio" id="bio" cols="30" rows="10"></textarea><br>
+            </fieldset>
+            <a href="welcome.html">
+                <input type="submit">
+            </a>
+        </form>
+    </body>
+</html>
