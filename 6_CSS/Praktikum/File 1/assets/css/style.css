@@ -1,0 +1,44 @@
+
+  .box-red {  
+    font-family: 'Slabo 27px',serif;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    background-color: red;
+    color: white;
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .box-blue {
+    font-family: 'Slabo 27px',serif;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  .box-green {
+    border-radius: 15px;
+    display: block;
+    font-family: 'Slabo 27px',serif;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    background-color: green;
+    color: white;
+    height: 340px;
+    width: 340px;
+    padding: 10px; 
+    margin-top: 10px; 
+    display:inline-block;
+  }
