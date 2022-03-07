@@ -1,0 +1,62 @@
+a {
+    font-family: 'Open Sans';
+}
+
+#simplified {
+    text-decoration: none;
+}
+#simplified h1{
+    font-family: 'Open Sans', serif;
+    color: gray !important;
+    font-weight: lighter;
+}
+
+.header-capt {
+    color: gray;
+}
+
+
+#link-kartu {
+    color: black !important;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+.card {
+    text-align: center;
+    font-family: 'Open Sans', serif;
+}
+
+.header {
+    font-family: 'Open Sans', serif;
+    font-size: 40px;
+    margin-top: 70px;
+}
+
+.image-capt {
+    font-family: 'Open Sans', serif;
+    color: gray;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.chevron-list {
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+.list-unstyled {
+    font-family: 'Open Sans', serif;
+    color: gray;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    margin-top: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
