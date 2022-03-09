@@ -6,3 +6,6 @@ Banyak orang menggunakan Javascript karena Javascript memiliki sifat High Level,
 Declaration adalah proses pembuatan variabel untuk menyimpan data
 Scoping menentukan dimana variable, fungsi dan objek dalam kode
 Hoisting adalah membuat beberapa jenis variable atau fungsi kedalam kode sebelum dideklarasikan
+
+Primitive adalah unit pemrosesan terkecil dan elemen yang memiliki bentuk paling sederhana
+Object adalah unit yang menyimpan beberapa properti dan fungsi
