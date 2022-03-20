@@ -1,0 +1,6 @@
+Pengertian JSX JSX merupakan singkatan dari Javascript XML. JSX adalah ekstensi sintax pada javascript. Penggunaan JSX sangat disarankan di React karena lebih menggambarkan apa yang seharusnya tampak pada User Interface.
+Alasan menggunakan JSX JSX dibuat berdasarkan fakta kalau logika rendering sangat terikat dengan logic UI lainnya seperti bagaimana event ditangani, bagaimana state berubah seiring dengan waktu, bagaimana data disiapkan untuk ditampilkan. Separation of Technology dengan memisahkan markup dan logika, React memisahkan kepentingan (Separation of concerns) dengan unit coupling yang rendah yang disebut sebagai komponen.
+Spesifikasi jenis Element React Bagian pertama dari sebuah penanda (tag) JSX menentukan jenis dari elemen React. Jenis-jenis yang dikapitalisasi menandakan bahwa penanda JSX merujuk pada sebuah komponen React.
+Ketika sebuah tipe elemen dimulai dengan sebuah huruf kecil (lowercase), hal tersebut merujuk pada sebuah komponen bawaan seperti
+atau .
+Menggunakan huruf kapital untuk pemberian nama pada komponen yang kita buat sendiri.
