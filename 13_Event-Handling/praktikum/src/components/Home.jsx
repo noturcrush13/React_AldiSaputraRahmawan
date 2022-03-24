@@ -26,6 +26,10 @@ export default function Home(props) {
     setTodos(getTodos.concat(todo))
   }
 
+  const removeTask = (e) => {
+    getTodos.filter((todo, index) => index !== e)
+    setTodos(getTodos.filter((todo, index) => index !== e))
+  }
 
 
 
@@ -34,7 +38,7 @@ export default function Home(props) {
         <Header title="To Do App"/>
         <Sidebar />
         <BodyForm onAddTodo={eventAddTodo}/>
-        <BodyList dataTodos={getTodos}/>
+        <BodyList dataTodos={getTodos} removeTask={removeTask}/>
     </div>
   )
 }
