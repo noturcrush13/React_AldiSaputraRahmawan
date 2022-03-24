@@ -1,5 +1,5 @@
-import React, {useState} from "react";
-import "./css/todolist.css"
+import React from "react";
+import "./css/todolist.css";
 
 
 export default function Body(props){
@@ -8,11 +8,14 @@ export default function Body(props){
         <div>
             <ul className="list-todo">{
                 dataTodos.map((list, index) => {
-                    return <li key={list.id}>{list.title} 
+                    return (     
+                    <li key={list.id}>
+                        <input className="boxes" type="checkbox"></input>
+                        {list.title} 
                     <button type="button" className="delete-btn" onClick={() => removeTask(index)}>
                         delete
                         </button>
-                </li>
+                </li>)
                 })
             }</ul>
         </div>

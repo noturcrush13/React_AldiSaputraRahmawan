@@ -24,3 +24,9 @@ li {
     padding: 10px, 0, 10px, 0,;
     float: right;
 }
+
+.boxes {
+    float: left;
+    justify-content: left;
+    margin-top: 7px;
+}

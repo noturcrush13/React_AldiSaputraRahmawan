@@ -5,14 +5,13 @@ import Header from './Head-Page'
 import BodyForm from './Body-Form';
 import BodyList from './Body-List';
 import { useState } from 'react';
-import removeTask from './Body-List'
 
 export default function Home(props) {
   const lists = [
     {
       id: 1,
       title: "Mengerjakan Exercise",
-      completed : true
+      completed: true
     },
     {
       id: 2,
@@ -31,6 +30,14 @@ export default function Home(props) {
     setTodos(getTodos.filter((todo, index) => index !== e))
   }
 
+  // const completedList = (id) => {
+  //   let updateData = getTodos.map((todo) => {
+  //     if(todo.id === id) {
+  //       todo.completed = !todo.completed
+  //     }
+  //     setTodos(updateData)
+  //   })
+  // }
 
 
   return (

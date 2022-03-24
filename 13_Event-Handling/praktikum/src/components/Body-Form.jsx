@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './css/inputform.css'
 import { useState } from 'react'
 
@@ -8,7 +8,7 @@ export default function BodyForm(props){
   const submitHandler = (event) => {
     event.preventDefault()
     if(getInput === ""){
-      return console.log("You must fill the form!")
+      return alert("You must fill the form!")
     }
     const addTodo = {
       id : Math.floor(Math.random(1) * 100),
