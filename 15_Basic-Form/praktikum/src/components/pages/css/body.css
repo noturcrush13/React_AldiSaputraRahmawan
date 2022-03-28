@@ -1,0 +1,22 @@
+.form {
+    text-align: left;
+    display: grid;
+    justify-content: center;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    grid-template-columns: auto;
+}
+
+.label-btn {
+    text-decoration: none;
+    text-align: left;
+    justify-content: left;
+}
