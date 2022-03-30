@@ -1,0 +1,30 @@
+.form-box {
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+    width: 20%;
+    margin: auto;
+    position: relative;
+    display: flex;
+}
+
+.inputform {
+    border-radius: 25px;
+    width: 95%;
+    height: 25px;
+}
+
+.add-btn {
+    background: lightblue;
+    border-color: transparent;
+    position: absolute;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    font: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding: 10px, 0, 10px, 0,;
+    height: 30px;
+    width: 20%;
+}
