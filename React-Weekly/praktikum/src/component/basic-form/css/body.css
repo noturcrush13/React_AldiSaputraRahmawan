@@ -1,0 +1,42 @@
+.form {
+    text-align: left;
+    display: grid;
+    justify-content: center;
+}
+
+.biodata {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.label-btn {
+    text-decoration: none;
+    text-align: left;
+    justify-content: left;
+    display: inline-block;
+    align-items: left;
+}
+
+.submitbtn{
+    color: white;
+    background-color: #3a811d;
+    border-radius: 5px;
+    width: 10%;
+    border: none;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.resetbtn{
+    color: white;
+    background-color: #ed3833;
+    border-radius: 5px;
+    width: 10%;
+    border: none;
+    height: 25px;
+    margin-right: 5px;
+}
