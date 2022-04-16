@@ -2,7 +2,7 @@ import React from 'react'
 import './css/inputform.css'
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { addTask } from '../store/todoSlice'
+import { addTask } from './store/todoSlice'
 
 export default function BodyForm(props){
   const dispatch = useDispatch()

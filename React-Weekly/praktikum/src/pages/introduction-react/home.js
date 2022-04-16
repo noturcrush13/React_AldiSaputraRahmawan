@@ -1,8 +1,8 @@
 import React from 'react';
-import '../asset/css/main.css'
-import orang from '../asset/img/orang.jpg'
-import logo from '../asset/img/logo-ALTA@2x.png'
-import '../asset/css/bootstrap.min.css'
+import './asset/css/main.css'
+import orang from './asset/img/orang.jpg'
+import logo from './asset/img/logo-ALTA@2x.png'
+import './asset/css/bootstrap.min.css'
 
 export default function Home() {
   return (

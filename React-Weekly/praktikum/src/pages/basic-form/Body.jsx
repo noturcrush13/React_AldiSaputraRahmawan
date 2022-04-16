@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 import './css/body.css'
-import {Container} from 'react-bootstrap'
+import { Container, Row } from 'react-bootstrap'
 
 
 
@@ -115,93 +115,107 @@ export default function Body(props) {
     <div className='form' >
         <form onSubmit={handleSubmit}>
             <Container>
-                <label>
-                    Nama Lengkap :
-                    <input 
-                    className="biodata" 
-                    name="nama" 
-                    value={data.nama} 
-                    type="text" 
-                    placeholder="Masukkan nama anda" 
-                    onChange={handleChange} 
-                    required/>
-                {message.nama && <p style={{width: "100%", color: "red"}}>{message.nama}</p>}
-                </label>
-                <label>
-                    Email :
-                    <input 
-                    className="biodata" 
-                    name="email" 
-                    value={data.email} 
-                    type="email" 
-                    placeholder="Masukkan email anda" 
-                    onChange={handleChange}
-                    required/>
-                {message.email && <p style={{width: "100%", color: "red"}}>{message.email}</p>}
-                </label>
-                <label>
-                    No Telp :
-                    <input 
-                    className="biodata" 
-                    name="noTelepon"
-                    value={data.noTelepon}
-                    type="text" 
-                    placeholder="Masukkan nomor telepon anda" 
-                    minLength="9"
-                    maxLength="14"
-                    onChange={handleChange}
-                    required/>
-                {message.noTelepon && <p style={{width: "100%", color: "red"}}>{message.noTelepon}</p>}
-                </label>
-            </Container>   
-            <label className='label-btn' required>
-                Latar Belakang Pendidikan :<br></br>
-                <input 
-                type="radio" 
-                value="IT" 
-                name="pendidikan" 
-                checked={IT}
-                onChange={handleChange}
-                onClick={radioChecked} />
-                <label htmlFor="IT">IT</label>
-                <input 
-                type="radio" 
-                value="NonIT" 
-                name="pendidikan"
-                checked={nonIT}
-                onChange={handleChange}
-                onClick={radioChecked}/>
-                <label htmlFor="NonIT">Non IT</label>
-            </label>
+                <Row>
+                    <label>
+                        Nama Lengkap :
+                        <input 
+                        className="biodata" 
+                        name="nama" 
+                        value={data.nama} 
+                        type="text" 
+                        placeholder="Masukkan nama anda" 
+                        onChange={handleChange} 
+                        required/>
+                    {message.nama && <p style={{width: "100%", color: "red"}}>{message.nama}</p>}
+                    </label>
+                </Row>
+                <Row>
+                    <label>
+                        Email :
+                        <input 
+                        className="biodata" 
+                        name="email" 
+                        value={data.email} 
+                        type="email" 
+                        placeholder="Masukkan email anda" 
+                        onChange={handleChange}
+                        required/>
+                    {message.email && <p style={{width: "100%", color: "red"}}>{message.email}</p>}
+                    </label>
+                </Row>
+                <Row>
+                    <label>
+                        No Telp :
+                        <input 
+                        className="biodata" 
+                        name="noTelepon"
+                        value={data.noTelepon}
+                        type="text" 
+                        placeholder="Masukkan nomor telepon anda" 
+                        minLength="9"
+                        maxLength="14"
+                        onChange={handleChange}
+                        required/>
+                    {message.noTelepon && <p style={{width: "100%", color: "red"}}>{message.noTelepon}</p>}
+                    </label>
+                </Row>
+            </Container>
             <Container>
-                <label htmlFor='kelas-coding'>Kelas Koding yang Dipilih :
-                    <select className='biodata' name='kelas' id='kelas' onChange={handleSelect} required>
-                        <option value='Default'>Pilih Salah Satu Program</option>
-                        <option value='Golang'>Coding Backend with Golang</option>
-                        <option value='ReactJS'>Coding Frontend with ReactJS</option>
-                        <option value='Fullstack'>Fullstack Developer</option>
-                    </select>
-                </label>
-                <label>
-                    Foto Surat Kesungguhan :
+                <label className='label-btn' required>
+                    Latar Belakang Pendidikan :<br></br>
+                    <input type="radio" 
+                    value="IT" 
+                    name="pendidikan" 
+                    checked={IT}
+                    onChange={handleChange}
+                    onClick={radioChecked} />
+                    <label htmlFor="IT">IT</label>
+
                     <input 
-                    className='biodata' 
-                    type="file" 
-                    id='userFile' 
-                    name='filename'
-                    ref={suratKesungguhan}
-                    required/>
+                    type="radio" 
+                    value="NonIT" 
+                    name="pendidikan"
+                    checked={nonIT}
+                    onChange={handleChange}
+                    onClick={radioChecked}/>
+                    <label htmlFor="NonIT">Non IT</label>
                 </label>
-                <label>
-                    Harapan Untuk Coding Bootcamp Ini :
-                    <textarea 
-                    className="biodata" 
-                    name='harapan' 
-                    rows="4" 
-                    cols="50"
-                    value={data.harapan}
-                    onChange={handleChange}/>
-                </label>
+            </Container>
+            <Container>
+                <Row>
+                    <label htmlFor='kelas-coding'>Kelas Koding yang Dipilih :
+                        <select className='biodata' name='kelas' id='kelas' onChange={handleSelect} required>
+                            <option value='Default'>Pilih Salah Satu Program</option>
+                            <option value='Golang'>Coding Backend with Golang</option>
+                            <option value='ReactJS'>Coding Frontend with ReactJS</option>
+                            <option value='Fullstack'>Fullstack Developer</option>
+                        </select>
+                    </label>
+                </Row>
+                <Row>
+                    <label>
+                        Foto Surat Kesungguhan :
+                        <input 
+                        className='biodata' 
+                        type="file" 
+                        id='userFile' 
+                        name='filename'
+                        ref={suratKesungguhan}
+                        required/>
+                    </label>
+                </Row>
+                <Row>
+                    <label>
+                        Harapan Untuk Coding Bootcamp Ini :
+                        <textarea 
+                        className="biodata" 
+                        name='harapan' 
+                        rows="4" 
+                        cols="50"
+                        value={data.harapan}
+                        onChange={handleChange}/>
+                    </label>
+                </Row>
                 <div>
                     <button className='submitbtn' value="submit">Submit</button>
                     <button className='resetbtn' onClick={resetData}>Reset</button>

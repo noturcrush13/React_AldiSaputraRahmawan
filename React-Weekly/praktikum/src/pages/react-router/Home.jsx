@@ -8,7 +8,7 @@ export default function Home({props}) {
   return (
     <div className='App'>
         <Header title="To Do App"/>
-        <BodyForm />
+        {/* <BodyForm /> */}
     </div>
   )
 }

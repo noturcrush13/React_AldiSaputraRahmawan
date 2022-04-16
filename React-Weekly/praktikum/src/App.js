@@ -5,8 +5,7 @@ import AxiosComponent from './component/Axios';
 function App() {
   return (
     <div className="App">
-      {/* <Homepage/> */}
-      <AxiosComponent/>
+      <Homepage/>
     </div>
   );
 }

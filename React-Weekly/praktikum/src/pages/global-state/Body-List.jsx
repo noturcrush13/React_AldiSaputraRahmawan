@@ -2,7 +2,7 @@ import React from "react";
 import "./css/todolist.css";
 import {AiOutlineFileDone} from "react-icons/ai"
 import { useSelector, useDispatch } from "react-redux";
-import { removeTask, completedList} from '../store/todoSlice'
+import { removeTask, completedList} from './store/todoSlice'
 
 
 export default function Body(props){

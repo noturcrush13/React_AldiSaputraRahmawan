@@ -1,5 +1,5 @@
 import React from 'react'
-import LogoAlta from '../asset/img/logo-ALTA-v2@2x.png'
+import LogoAlta from './asset/img/logo-ALTA-v2@2x.png'
 
 export default function Contact_us() {
   return (

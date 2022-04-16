@@ -1,5 +1,5 @@
 import React from "react";
-import styles from '../assets/listdata.module.css'
+import styles from './css/listdata.module.css'
 
 export default function Body({list}){
     return (
