@@ -1,0 +1,39 @@
+// memanggil siswa yang memiliki status true
+query MyQuery {
+    keterangan(where: {Status: {_eq: true}}) {
+      Nilai
+      Pelajaran
+      Status
+      id
+      id_anggota
+    }
+  }
+;
+
+// insert kepada angga dengan menggunakan mutation
+mutation MyMutation {
+    insert_keterangan(objects: {Nilai: 90, Pelajaran: "Sistem Informasi", Status: true, id: 5, id_anggota: 3}) {
+      affected_rows
+      returning {
+        Nilai
+        Pelajaran
+        Status
+        id
+        id_anggota
+      }
+    }
+  }
+;
+mutation MyMutation {
+    insert_keterangan(objects: {Nilai: 55, Pelajaran: "React", Status: false, id: 6, id_anggota: 3}) {
+      affected_rows
+      returning {
+        Nilai
+        Pelajaran
+        Status
+        id
+        id_anggota
+      }
+    }
+  }
+;  

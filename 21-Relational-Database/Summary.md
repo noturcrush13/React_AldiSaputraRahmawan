@@ -1,0 +1,7 @@
+Database relasional adalah kumpulan item data dengan hubungan yang telah ditentukan sebelumnya. Berbagai item ini disusun menjadi satu set tabel dengan kolom dan baris. Tabel digunakan untuk menyimpan informasi tentang objek yang akan direpresentasikan dalam database. Tiap kolom pada tabel memuat jenis data tertentu dan bidang menyimpan nilai aktual atribut. Baris pada tabel merepresentasikan kumpulan nilai terkait dari satu objek atau entitas. Tiap baris pada tabel dapat ditandai dengan pengidentifikasi unik yang disebut kunci utama, dan baris di antara beberapa tabel dapat dibuat saling terkait menggunakan kunci asing. Data ini dapat diakses dengan berbagai cara tanpa menyusun ulang tabel basis data itu sendiri.
+
+One to many relationship adalah suatu relasi yang berbentuk satu baris data di sebuah tabel dapat berhubungan dengan satu atau lebih baris data di tabel lain.
+
+One to One relationship adalah setiap baris data pada tabel pertama dihubungkan hanya ke satu baris data pada tabel ke dua. Hubungan antara file pertama dan file kedua adalah satu berbanding satu.
+
+many to many relationship adalah setiap baris data dari tabel pertama dihubungkan lebih dari satu baris ke tabel kedua. Hubungan antara file pertama dan file kedua adalah banyak berbanding satu. 

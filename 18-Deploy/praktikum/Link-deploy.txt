@@ -1,0 +1,3 @@
+Surge : reactdeploy-test.surge.sh 
+Vercel : https://reactdeploy-aldi.vercel.app 
+Netlify : https://reactdeploy-test.netlify.app
