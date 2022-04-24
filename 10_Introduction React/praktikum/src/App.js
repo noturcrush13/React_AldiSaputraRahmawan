@@ -2,7 +2,7 @@ import './App.css';
 import Home from './pages/home';
 import React, {useState} from 'react';
 import Contact_us from './pages/contact_us';
-import {gql, useQuery, useLazyQuery, useMutation} from '@apollo/client';
+import {gql, useQuery, useLazyQuery, useMutation, useSubscription} from '@apollo/client';
 
 const GetData = gql`
 query MyQuery {
@@ -44,6 +44,16 @@ mutation MyMutation($id: Int) {
 }
 `;
 
+const liveData = gql`
+subscription MySubscription {
+  pesanan_barang {
+    id
+    id_barang
+    jumlah
+  }
+}
+`;
+
 
 function App() {
   const { loading, error, data:dataQuery } = useQuery(GetData);
@@ -54,6 +64,7 @@ function App() {
   const [jumlah, setJumlah] = useState();
   const [insertData, {loading: loadingInsert}] = useMutation(insertBarang, {refetchQueries: [{query: GetData}]});
   const [deleteData, {loading: loadingDelete}] = useMutation(deleteBarang, {refetchQueries: [{query: GetData}]});
+  const {data: dataLive, loading: loadingLive } = useSubscription(liveData);
 
   const handleChange = (e) => {
     console.log("e.target.value = ",e.target.value);
@@ -83,12 +94,12 @@ function App() {
   // console.log(dataLazy)
   // if(error) return <h1>Error</h1>
   if(loading) return <h1>Loading</h1>
-  console.info(dataQuery);
+  console.info(dataLive);
   return (
     <>
       <div className="App">
         <h1>hai</h1>
-        {dataQuery.pesanan_barang.map(barang => (
+        {dataLive?.pesanan_barang.map(barang => (
           <>
             <button type="submit" onClick={() => {deleteData({variables : {id : barang.id}})}}>Delete</button>
             <h1>{barang.id}</h1>

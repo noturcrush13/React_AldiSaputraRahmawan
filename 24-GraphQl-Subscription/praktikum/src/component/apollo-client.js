@@ -5,19 +5,19 @@ import { getMainDefinition } from "@apollo/client/utilities";
 import { createClient } from 'graphql-ws';
 
 const wsLink = new GraphQLWsLink(createClient({
-    url: 'wss://first-database.hasura.app/v1/graphql',
+    url: 'wss://passenger.hasura.app/v1/graphql',
     connectionParams: {
       headers: {
-        "x-hasura-admin-secret" : "w154ewTWc1EoOrrk42JOdQfHJmyfyOh1hMQfEeSKoETJLUomJLM1BVzJW5JCoo0R"
+        "x-hasura-admin-secret" : "KHuO6imCn2b1Lz9fbP9Iu2c6Tg1U55eWcp170OqWkiiXH05xoKMuhDmBtZEWF5cv"
       }
     }
   }));
 
 const httpLink = new HttpLink({
-  uri: "https://first-database.hasura.app/v1/graphql",
+  uri: "https://passenger.hasura.app/v1/graphql",
   headers: {
     "x-hasura-admin-secret":
-      "w154ewTWc1EoOrrk42JOdQfHJmyfyOh1hMQfEeSKoETJLUomJLM1BVzJW5JCoo0R",
+      "KHuO6imCn2b1Lz9fbP9Iu2c6Tg1U55eWcp170OqWkiiXH05xoKMuhDmBtZEWF5cv",
   },
 });
 
